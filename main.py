@@ -7,7 +7,7 @@ experience = 1.5
 # Boolean
 is_SDeveloper = True
 
-# Array
+# list
 skills = ['JS', 'TS', 'Python', 'React']
 
 # object
