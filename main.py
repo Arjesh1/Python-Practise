@@ -10,7 +10,7 @@ is_SDeveloper = True
 # list
 skills = ['JS', 'TS', 'Python', 'React']
 
-# object
+# dictionaries
 userData = {
     'name' : 'Arjesh',
     'experience' : 1.5,
