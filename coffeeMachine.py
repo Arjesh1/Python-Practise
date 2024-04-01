@@ -33,9 +33,10 @@ resources = {
 def calculate_total(two_dollar,one_dollar,fifty_cents,twenty_cents, ten_cents, five_cents ):
     return 2 * two_dollar + 1 * one_dollar + 0.50 * fifty_cents + 0.20 * twenty_cents + 0.10 * ten_cents + 0.05 * five_cents
 
-while 2 > 1:
-    print(resources)
-    print('Welcome to the coffee machine.')
+is_on = True
+
+while is_on:
+    print('\nWelcome to the coffee machine.')
     print('espresso: $1.5\nlatte: $2.5\ncappuccino: $3')
     order = input('What would you like? (espresso/latte/cappuccino): ')
     if order in MENU:
@@ -66,8 +67,12 @@ while 2 > 1:
                             resources[resource] -= orderDescription['ingredients'][ingredient]
             else:
                 print(f'Thats not enough money. Refunding ${amount}')
+    elif order == 'report':
+        print(
+            f"water: {resources['water']}\nmilk: {resources['milk']}\ncoffee: {resources['coffee']}"
+        )
     else: 
-        print("Sorry we don't have your order.")
+        print("Sorry unknown request.")
 
 
         
